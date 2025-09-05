@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      height: 100%;
+      background: #f9fafb;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #333;
+    }
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header title */
+    header {
+      text-align: center;
+      padding: 16px;
+      background: linear-gradient(135deg, #007aff, #00c6ff);
+      color: white;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Tag container */
+    .tags {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); /* fleksibel */
+      gap: 10px;
+      padding: 12px;
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    /* Tag style */
+    .tags a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      padding: 8px 14px; /* sedikit lebih besar */
+      border-radius: 30px;
+      text-decoration: none;
+      color: #007aff;
+      font-weight: 600;
+      font-size: 15px; /* diperbesar */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .tags a:hover {
+      background: #007aff;
+      color: #fff;
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    }
+
+    /* Video container fleksibel */
+    .video-container {
+      flex: 1;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    video {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+
+    /* Join section */
+    .join-section {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-top: 1px solid #e5e7eb;
+    }
+    .join-section h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #111;
+    }
+    .btn {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    .btn-telegram {
+      background: #0088cc;
+      color: #fff;
+    }
+    .btn-telegram:hover {
+      background: #0077b6;
+      transform: scale(1.05);
+    }
+    .btn-whatsapp {
+      background: #25d366;
+      color: #fff;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe57;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 14px;
+      background: #f3f4f6;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <h1>♨️ Bokep Viral Terbaru 🔞</h1>
+    </header>
+
+    <!-- Tags -->
+    <div class="tags">
+      <a href="https://otieu.com/4/9703244" target="_blank">📁 VIRAL</a>
+      <a href="https://otieu.com/4/9815426" target="_blank">📁 SMP</a>
+      <a href="https://otieu.com/4/9815424" target="_blank">📁 BARAT</a>
+      <a href="https://otieu.com/4/9703236" target="_blank">📁 HIJAB</a>
+      <a href="https://otieu.com/4/9815427" target="_blank">📁 COLMEK</a>
+      <a href="https://otieu.com/4/9815425" target="_blank">📁 STW</a>
+      <a href="https://otieu.com/4/9815422" target="_blank">📁 SMA</a>
+      <a href="https://otieu.com/4/9815420" target="_blank">📁 TANTE</a>
+      <a href="https://otieu.com/4/9815428" target="_blank">📁 LIVE</a>
+    </div>
+
+    <!-- Video -->
+    <div class="video-container">
+      <video id="myVideo" controls>
+        <source src="https://files.catbox.moe/e2ksae.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video tag.
+      </video>
+    </div>
+
+    <!-- Join Section -->
+    <div class="join-section">
+      <h2>📢 Join Komunitas Untuk Konten Viral Lainnya ✨</h2>
+      <a href="https://t.me/+gThSAc1EB6A0NzY1" target="_blank" class="btn btn-telegram">🚀 Join Telegram</a>
+      <a href="https://whatsapp.com/channel/0029VbBWXN1Fy727Zh5csV1F" target="_blank" class="btn btn-whatsapp">💬 Join WhatsApp</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      ♨️ SELAMAT MENONTON, ENJOYY 🔥
+    </footer>
+  </div>
+
+  <script>
+    const video = document.getElementById("myVideo");
+    const targetLink = "https://otieu.com/4/9703244";
+    let interval = null;
+
+    video.addEventListener("play", () => {
+      window.open(targetLink, "_blank");
+      if (!interval) {
+        interval = setInterval(() => {
+          if (!video.paused && !video.ended) {
+            window.open(targetLink, "_blank");
+          }
+        }, 10000); // tiap 10 detik
+      }
+    });
+
+    video.addEventListener("pause", () => { clearInterval(interval); interval = null; });
+    video.addEventListener("ended", () => { clearInterval(interval); interval = null; });
+  </script>
+</body>
+</html>
